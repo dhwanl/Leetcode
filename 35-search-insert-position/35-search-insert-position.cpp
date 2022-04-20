@@ -22,9 +22,8 @@ public:
   
         if(target > nums[mid])
             return mid + 1; // we can get numbers over the range by adding + 1
-        else if(target < nums[mid] && target > 0)
+        else //if(target < nums[mid] && target > 0)
             return mid;
-        else
-            return mid;
+        
     }
 };
