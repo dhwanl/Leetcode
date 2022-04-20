@@ -20,9 +20,13 @@ public:
                 high = mid - 1;
         }
   
-        return low;
+        return low; // better solution
+        
+        
         
         /*
+        my solution
+        
         if(target > nums[mid])
             return mid + 1; // we can get numbers over the range by adding + 1
         else
