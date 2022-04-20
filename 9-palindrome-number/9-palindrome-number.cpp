@@ -6,7 +6,7 @@ public:
         string s = to_string(x);
         
         // scan all characters
-        for(int i = 0, j = (s.length() - 1); i <= j; i++, j--)
+        for(int i = 0, j = s.length() - 1; i <= j; i++, j--)
         {
            if(s[i] != s[j]) // if each elements is different, return false
                return false;
