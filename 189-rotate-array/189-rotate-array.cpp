@@ -2,6 +2,7 @@ class Solution {
 public:
     void rotate(vector<int>& nums, int k) {
         
+        // make a new vector for order
         int size = nums.size();
         vector<int> v(size);
         
