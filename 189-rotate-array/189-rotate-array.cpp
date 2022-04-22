@@ -10,7 +10,6 @@ public:
         for(int i = 0; i < size; i++)
             v[(i + k) % size] = nums[i];
         
-        
         // copy the ordered vector to the original vector
         for(int i = 0; i < size; i++)
             nums[i] = v[i];
