@@ -13,7 +13,10 @@ public:
         string newStr1 = ""; // to reverse each string
         string newStr2 = ""; // to return final string
         
-        
+        // i <= s.length() to include the last element
+        // in the sequence, every element can be included before whitespace,
+        // but in the last no white space, 
+        // so we should make the condition that include last element
         for(int i = 0; i <= s.length(); i++)
         {
 
