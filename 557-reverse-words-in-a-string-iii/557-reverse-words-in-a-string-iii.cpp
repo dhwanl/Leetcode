@@ -62,7 +62,7 @@ private:
             ptr2--;
         }
         
-    // return value
+    // return string
     return s;
     }
 };
