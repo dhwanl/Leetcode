@@ -52,6 +52,6 @@ public:
             
         }
         
-        return head; // return head
+        return head; // return
     }
 };
