@@ -9,23 +9,25 @@ public:
             3. a swap function
         */
         
-        string newStr1 = "";
-        string newStr2 = "";
+        // make two empty strings
+        string newStr1 = ""; // to reverse each string
+        string newStr2 = ""; // to return final string
         
-            
-            
+        
         for(int i = 0; i <= s.length(); i++)
         {
 
             if(s[i] == ' ' || i == s.length())
             {
-                swapString(newStr1);
+                swapString(newStr1); // call a function to swap
                 
+                // use if-statement not to print out whitespace at the end
                 if(i == s.length())
                     newStr2 += newStr1;
                 else
                     newStr2 += newStr1 + s[i];
                 
+                // make temporary string to default
                 newStr1 = "";
             
             }else{
@@ -35,12 +37,14 @@ public:
            
         }
         
+        // return string
         return newStr2;
     }
     
 private:
     string swapString(string& s)
     {
+        // use two pointers
         int ptr1 = 0;
         int ptr2 = s.length() - 1;
         char temp;
