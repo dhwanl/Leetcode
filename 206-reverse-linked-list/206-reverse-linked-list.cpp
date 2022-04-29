@@ -11,8 +11,8 @@
 class Solution {
 public:
     ListNode* reverseList(ListNode* head) {
-        
         /*
+        
             using recursion to reverse a linked list
                 set base case if head is empty or head next is empty
             
@@ -20,7 +20,7 @@ public:
                 to first print out two elements reversed at the end of linked list
             
             return a new linked list 
-        */
+        
         
         // base case of recursion
         if(head == NULL || head->next == nullptr) return head;
@@ -33,5 +33,18 @@ public:
         head->next = nullptr; // set nullptr after a smaller value to stop recursion
         
         return small; // return small
+        */
+            
+        if(!head) return NULL;
+	    ListNode* cur = head;
+	ListNode* nxt = head->next;
+	cur->next = NULL;
+	while(nxt != NULL){
+		ListNode* tmp = nxt->next;
+		nxt->next = cur;
+		cur = nxt;
+		nxt = tmp;
+	}
+	return cur;
     }
 };
