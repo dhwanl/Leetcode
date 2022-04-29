@@ -28,10 +28,10 @@ public:
         
         // call the recursion function to reverse two elements at each sequence
         ListNode* small = reverseList(head->next);
-        ListNode* large = head->next; //
-        large->next = head;
-        head->next = nullptr;
+        ListNode* large = head->next; // an bigger element than before
+        large->next = head; // put an smaller element into next
+        head->next = nullptr; // set nullptr after a smaller value to stop recursion
         
-        return small;
+        return small; // return small
     }
 };
