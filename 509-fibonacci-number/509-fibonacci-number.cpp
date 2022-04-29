@@ -3,13 +3,13 @@ public:
     int fib(int n) {
       
         /*
+            use recursion
         
             1. fibonacci numbers need two base case
                 - when n == 0, 0;
                 - when n == 1, 1;
             
             2. index - 2 + index - 1
-                using recursion
         */
         
         
