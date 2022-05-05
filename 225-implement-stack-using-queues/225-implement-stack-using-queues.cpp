@@ -7,7 +7,6 @@ public:
     void push(int x) {
         
         q2.push(x);
-        peek = x;
         
         while(!empty())
         {
@@ -37,10 +36,13 @@ public:
         return q1.empty();
     }
     
+/*
+    using two queues
+*/
+    
 private:
     queue<int> q1;
     queue<int> q2;
-    int peek;
 };
 
 /**
