@@ -4,7 +4,6 @@ public:
         
         int size = nums.size();
         int min = nums[0];
-        int max;
         
         for(int i = 1; i < size; i++)
         {
