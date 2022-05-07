@@ -14,18 +14,19 @@ public:
         }
     
         stack<int> sta;
+        int secondMin = min;
         
         // find the second largest one, j
         for(int i = size - 1; i >= 0; i--)
         {
             // find k and compare j
-            if(nums[i] < min)
+            if(nums[i] < secondMin)
                 return true;
             
             // change min to j
             while(!sta.empty() && nums[i] > sta.top())
             {
-                min = sta.top();
+                secondMin = sta.top();
                 sta.pop();
             }
             
