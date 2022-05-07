@@ -3,8 +3,8 @@ public:
     bool find132pattern(vector<int>& nums) {
         
         int size = nums.size();
-        int min = nums[0];
         
+        int min = nums[0];
         // find minimum 
         // i.e. find i in i < j < k
         for(int i = 1; i < size; i++)
@@ -12,7 +12,7 @@ public:
            if(min > nums[i])
                min = nums[i];
         }
-        
+    
         stack<int> sta;
         
         // find the second largest one, j
