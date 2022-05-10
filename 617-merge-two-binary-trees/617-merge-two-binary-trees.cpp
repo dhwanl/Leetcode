@@ -14,12 +14,13 @@ public:
     TreeNode* mergeTrees(TreeNode* root1, TreeNode* root2) {
         
         /*
-            related topics
+            -related topics
             Tree
             Depth-first search
             Breadth-First Search
             Binary Tree
         */
+        
         // recursion with two base cases
         if(root1 == NULL) return root2;
         if(root2 == NULL) return root1;
